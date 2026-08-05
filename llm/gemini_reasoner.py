@@ -209,6 +209,85 @@ Do not hallucinate."""
             })
         return results
 
+    def extract_preferences(self, prompt: str) -> Dict[str, Any]:
+        """
+        Extracts structured shopping preferences from a natural language request using Gemini's JSON mode.
+
+        Args:
+            prompt: User's natural language request.
+
+        Returns:
+            A dictionary containing:
+            {
+                "category": str or None,
+                "subcategory": str or None,
+                "budget": float/int or None,
+                "preferred_brand": str or None,
+                "preferred_tags": List[str]
+            }
+        """
+        fallback = {
+            "category": None,
+            "subcategory": None,
+            "budget": None,
+            "preferred_brand": None,
+            "preferred_tags": []
+        }
+
+        if not self.client:
+            return fallback
+
+        try:
+            system_instruction = """You are a structured preference extraction assistant.
+Analyze the user's shopping request and extract their preferences into a JSON object.
+
+Expected JSON format:
+{
+    "category": "...",
+    "subcategory": "...",
+    "budget": ...,
+    "preferred_brand": "...",
+    "preferred_tags": [...]
+}
+
+If a field cannot be determined from the prompt, return null for that field.
+
+Constraint Rules:
+- The extracted category MUST be mapped to one of the following valid categories:
+  [Accessories, Books, Electronics, Fashion, Fitness, Gaming, Home & Kitchen]
+- The extracted subcategory MUST be mapped to one of the following valid subcategories:
+  [Laptop, Smartphone, Tablet, Smartwatch, Headphones, Bluetooth Speaker, Monitor, Running Shoes, Sneakers, Backpack, Watch, Jacket, Coffee Maker, Air Fryer, Mixer, Vacuum Cleaner, Cookware Set, Self Help, Productivity, Programming, Business, Finance, Yoga Mat, Dumbbells, Protein Powder, Resistance Bands, Gaming Mouse, Mechanical Keyboard, Gaming Chair, Power Bank, USB Hub, SSD, Pendrive, Wireless Mouse]
+- The extracted preferred_brand MUST be mapped to one of the following valid brands (or null if not mentioned or not in list):
+  [Apple, Dell, Samsung, Lenovo, Noise, Sony, boAt, JBL, Nike, Decathlon, Adidas, Puma, Wildcraft, American Tourister, Fossil, Titan, Levi's, Woodland, Philips, Nescafe, Prestige, Bajaj, Preethi, Dyson, Eureka Forbes, Hawkins, James Clear, Cal Newport, Robert Martin, Hector Garcia, Eric Ries, Robert Kiyosaki, Boldfit, Reebok, Kore, Bodymaxx, Optimum Nutrition, MuscleBlaze, Fitkit, Logitech, Razer, Redragon, Corsair, GTRACING, Secretlab, Xiaomi, Anker, UGREEN, Western Digital, SanDisk, HP]
+- Map category, subcategory, and brand to the exact casing and naming listed above.
+- DO NOT recommend products.
+- DO NOT invent details.
+- preferred_tags must be a list of strings.
+- Return ONLY valid JSON matching the schema."""
+
+            response = self.client.models.generate_content(
+                model='gemini-3.5-flash',
+                contents=prompt,
+                config=types.GenerateContentConfig(
+                    response_mime_type="application/json",
+                    system_instruction=system_instruction,
+                    temperature=0.1
+                )
+            )
+
+            if response.text:
+                import json
+                extracted = json.loads(response.text.strip())
+                # Ensure all keys exist
+                for key in fallback:
+                    if key not in extracted:
+                        extracted[key] = fallback[key]
+                return extracted
+            return fallback
+
+        except Exception:
+            return fallback
+
 if __name__ == "__main__":
     # Demo code showing one recommendation being explained
     print("Initializing GeminiReasoner...")

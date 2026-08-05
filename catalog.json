@@ -1,0 +1,1466 @@
+[
+  {
+    "id": 1,
+    "name": "MacBook Air M3",
+    "category": "Electronics",
+    "subcategory": "Laptop",
+    "brand": "Apple",
+    "price": 115000,
+    "rating": 4.8,
+    "tags": [
+      "Coding",
+      "Editing",
+      "Students",
+      "Premium"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Dell Inspiron 15",
+    "category": "Electronics",
+    "subcategory": "Laptop",
+    "brand": "Dell",
+    "price": 62000,
+    "rating": 4.5,
+    "tags": [
+      "Coding",
+      "Office",
+      "Budget"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "iPhone 15",
+    "category": "Electronics",
+    "subcategory": "Smartphone",
+    "brand": "Apple",
+    "price": 79000,
+    "rating": 4.7,
+    "tags": [
+      "Photography",
+      "Premium",
+      "Everyday"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Samsung Galaxy M34",
+    "category": "Electronics",
+    "subcategory": "Smartphone",
+    "brand": "Samsung",
+    "price": 18000,
+    "rating": 4.3,
+    "tags": [
+      "Budget",
+      "Everyday",
+      "Battery"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "iPad 10th Gen",
+    "category": "Electronics",
+    "subcategory": "Tablet",
+    "brand": "Apple",
+    "price": 45000,
+    "rating": 4.6,
+    "tags": [
+      "Students",
+      "Entertainment",
+      "Drawing"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Lenovo Tab M10",
+    "category": "Electronics",
+    "subcategory": "Tablet",
+    "brand": "Lenovo",
+    "price": 14000,
+    "rating": 4.0,
+    "tags": [
+      "Budget",
+      "Kids",
+      "Entertainment"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Apple Watch SE",
+    "category": "Electronics",
+    "subcategory": "Smartwatch",
+    "brand": "Apple",
+    "price": 32000,
+    "rating": 4.6,
+    "tags": [
+      "Fitness",
+      "Premium",
+      "Health"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Noise ColorFit Pro 4",
+    "category": "Electronics",
+    "subcategory": "Smartwatch",
+    "brand": "Noise",
+    "price": 3500,
+    "rating": 4.1,
+    "tags": [
+      "Budget",
+      "Fitness",
+      "Everyday"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Sony WH-1000XM5",
+    "category": "Electronics",
+    "subcategory": "Headphones",
+    "brand": "Sony",
+    "price": 29000,
+    "rating": 4.8,
+    "tags": [
+      "Premium",
+      "Noise Cancelling",
+      "Travel"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "boAt Rockerz 450",
+    "category": "Electronics",
+    "subcategory": "Headphones",
+    "brand": "boAt",
+    "price": 1800,
+    "rating": 4.0,
+    "tags": [
+      "Budget",
+      "Everyday",
+      "Bass"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "JBL Flip 6",
+    "category": "Electronics",
+    "subcategory": "Bluetooth Speaker",
+    "brand": "JBL",
+    "price": 11000,
+    "rating": 4.5,
+    "tags": [
+      "Outdoor",
+      "Party",
+      "Waterproof"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Dell 27-inch Monitor",
+    "category": "Electronics",
+    "subcategory": "Monitor",
+    "brand": "Dell",
+    "price": 18000,
+    "rating": 4.4,
+    "tags": [
+      "Coding",
+      "Office",
+      "Productivity"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Nike Air Zoom Pegasus",
+    "category": "Fashion",
+    "subcategory": "Running Shoes",
+    "brand": "Nike",
+    "price": 9500,
+    "rating": 4.6,
+    "tags": [
+      "Running",
+      "Sports",
+      "Premium"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Decathlon Kalenji Run 100",
+    "category": "Fashion",
+    "subcategory": "Running Shoes",
+    "brand": "Decathlon",
+    "price": 1800,
+    "rating": 4.1,
+    "tags": [
+      "Budget",
+      "Running",
+      "Beginner"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Adidas Ultraboost",
+    "category": "Fashion",
+    "subcategory": "Sneakers",
+    "brand": "Adidas",
+    "price": 14000,
+    "rating": 4.7,
+    "tags": [
+      "Casual",
+      "Premium",
+      "Comfort"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Puma Smash Sneakers",
+    "category": "Fashion",
+    "subcategory": "Sneakers",
+    "brand": "Puma",
+    "price": 3500,
+    "rating": 4.2,
+    "tags": [
+      "Casual",
+      "Budget",
+      "Everyday"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Wildcraft Trailblazer Backpack",
+    "category": "Fashion",
+    "subcategory": "Backpack",
+    "brand": "Wildcraft",
+    "price": 2200,
+    "rating": 4.4,
+    "tags": [
+      "Travel",
+      "Students",
+      "Durable"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "American Tourister Backpack",
+    "category": "Fashion",
+    "subcategory": "Backpack",
+    "brand": "American Tourister",
+    "price": 1600,
+    "rating": 4.1,
+    "tags": [
+      "Budget",
+      "Office",
+      "Everyday"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Fossil Gen 6 Watch",
+    "category": "Fashion",
+    "subcategory": "Watch",
+    "brand": "Fossil",
+    "price": 22000,
+    "rating": 4.5,
+    "tags": [
+      "Premium",
+      "Business",
+      "Smart"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Titan Analog Watch",
+    "category": "Fashion",
+    "subcategory": "Watch",
+    "brand": "Titan",
+    "price": 3200,
+    "rating": 4.3,
+    "tags": [
+      "Budget",
+      "Classic",
+      "Everyday"
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Levi's Denim Jacket",
+    "category": "Fashion",
+    "subcategory": "Jacket",
+    "brand": "Levi's",
+    "price": 4500,
+    "rating": 4.4,
+    "tags": [
+      "Casual",
+      "Winter",
+      "Fashion"
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Woodland Leather Jacket",
+    "category": "Fashion",
+    "subcategory": "Jacket",
+    "brand": "Woodland",
+    "price": 6800,
+    "rating": 4.5,
+    "tags": [
+      "Premium",
+      "Winter",
+      "Outdoor"
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Philips Daily Collection Coffee Maker",
+    "category": "Home & Kitchen",
+    "subcategory": "Coffee Maker",
+    "brand": "Philips",
+    "price": 3200,
+    "rating": 4.3,
+    "tags": [
+      "Kitchen",
+      "Everyday",
+      "Budget"
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Nescafe Dolce Gusto",
+    "category": "Home & Kitchen",
+    "subcategory": "Coffee Maker",
+    "brand": "Nescafe",
+    "price": 8500,
+    "rating": 4.5,
+    "tags": [
+      "Premium",
+      "Kitchen",
+      "Espresso"
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Philips Air Fryer HD9252",
+    "category": "Home & Kitchen",
+    "subcategory": "Air Fryer",
+    "brand": "Philips",
+    "price": 7500,
+    "rating": 4.6,
+    "tags": [
+      "Healthy Cooking",
+      "Kitchen",
+      "Popular"
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Prestige Air Fryer",
+    "category": "Home & Kitchen",
+    "subcategory": "Air Fryer",
+    "brand": "Prestige",
+    "price": 4200,
+    "rating": 4.2,
+    "tags": [
+      "Budget",
+      "Kitchen",
+      "Healthy Cooking"
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Bajaj Mixer Grinder",
+    "category": "Home & Kitchen",
+    "subcategory": "Mixer",
+    "brand": "Bajaj",
+    "price": 3200,
+    "rating": 4.2,
+    "tags": [
+      "Kitchen",
+      "Budget",
+      "Everyday"
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Preethi Mixer Grinder",
+    "category": "Home & Kitchen",
+    "subcategory": "Mixer",
+    "brand": "Preethi",
+    "price": 4800,
+    "rating": 4.4,
+    "tags": [
+      "Kitchen",
+      "Durable",
+      "Popular"
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Dyson V8 Vacuum Cleaner",
+    "category": "Home & Kitchen",
+    "subcategory": "Vacuum Cleaner",
+    "brand": "Dyson",
+    "price": 32000,
+    "rating": 4.7,
+    "tags": [
+      "Premium",
+      "Home Cleaning",
+      "Cordless"
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Eureka Forbes Vacuum Cleaner",
+    "category": "Home & Kitchen",
+    "subcategory": "Vacuum Cleaner",
+    "brand": "Eureka Forbes",
+    "price": 6500,
+    "rating": 4.1,
+    "tags": [
+      "Budget",
+      "Home Cleaning"
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Prestige Cookware Set",
+    "category": "Home & Kitchen",
+    "subcategory": "Cookware Set",
+    "brand": "Prestige",
+    "price": 5200,
+    "rating": 4.3,
+    "tags": [
+      "Kitchen",
+      "Everyday",
+      "Durable"
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Hawkins Cookware Set",
+    "category": "Home & Kitchen",
+    "subcategory": "Cookware Set",
+    "brand": "Hawkins",
+    "price": 3800,
+    "rating": 4.2,
+    "tags": [
+      "Budget",
+      "Kitchen",
+      "Classic"
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Atomic Habits",
+    "category": "Books",
+    "subcategory": "Self Help",
+    "brand": "James Clear",
+    "price": 499,
+    "rating": 4.8,
+    "tags": [
+      "Self Help",
+      "Productivity",
+      "Bestseller"
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Deep Work",
+    "category": "Books",
+    "subcategory": "Productivity",
+    "brand": "Cal Newport",
+    "price": 450,
+    "rating": 4.6,
+    "tags": [
+      "Productivity",
+      "Career",
+      "Focus"
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Clean Code",
+    "category": "Books",
+    "subcategory": "Programming",
+    "brand": "Robert Martin",
+    "price": 650,
+    "rating": 4.7,
+    "tags": [
+      "Programming",
+      "Software Engineering",
+      "Technical"
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Ikigai",
+    "category": "Books",
+    "subcategory": "Self Help",
+    "brand": "Hector Garcia",
+    "price": 399,
+    "rating": 4.5,
+    "tags": [
+      "Self Help",
+      "Lifestyle",
+      "Bestseller"
+    ]
+  },
+  {
+    "id": 37,
+    "name": "The Lean Startup",
+    "category": "Books",
+    "subcategory": "Business",
+    "brand": "Eric Ries",
+    "price": 550,
+    "rating": 4.4,
+    "tags": [
+      "Business",
+      "Startup",
+      "Entrepreneurship"
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Rich Dad Poor Dad",
+    "category": "Books",
+    "subcategory": "Finance",
+    "brand": "Robert Kiyosaki",
+    "price": 350,
+    "rating": 4.5,
+    "tags": [
+      "Finance",
+      "Self Help",
+      "Bestseller"
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Boldfit Yoga Mat",
+    "category": "Fitness",
+    "subcategory": "Yoga Mat",
+    "brand": "Boldfit",
+    "price": 899,
+    "rating": 4.3,
+    "tags": [
+      "Budget",
+      "Fitness",
+      "Home Workout"
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Reebok Yoga Mat",
+    "category": "Fitness",
+    "subcategory": "Yoga Mat",
+    "brand": "Reebok",
+    "price": 1800,
+    "rating": 4.5,
+    "tags": [
+      "Premium",
+      "Fitness",
+      "Durable"
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Kore Dumbbells Set",
+    "category": "Fitness",
+    "subcategory": "Dumbbells",
+    "brand": "Kore",
+    "price": 2500,
+    "rating": 4.2,
+    "tags": [
+      "Home Gym",
+      "Strength",
+      "Budget"
+    ]
+  },
+  {
+    "id": 42,
+    "name": "Bodymaxx Adjustable Dumbbells",
+    "category": "Fitness",
+    "subcategory": "Dumbbells",
+    "brand": "Bodymaxx",
+    "price": 5500,
+    "rating": 4.4,
+    "tags": [
+      "Home Gym",
+      "Strength",
+      "Premium"
+    ]
+  },
+  {
+    "id": 43,
+    "name": "Optimum Nutrition Whey Protein",
+    "category": "Fitness",
+    "subcategory": "Protein Powder",
+    "brand": "Optimum Nutrition",
+    "price": 4200,
+    "rating": 4.7,
+    "tags": [
+      "Fitness",
+      "Muscle Gain",
+      "Premium"
+    ]
+  },
+  {
+    "id": 44,
+    "name": "MuscleBlaze Whey Protein",
+    "category": "Fitness",
+    "subcategory": "Protein Powder",
+    "brand": "MuscleBlaze",
+    "price": 2200,
+    "rating": 4.3,
+    "tags": [
+      "Budget",
+      "Fitness",
+      "Muscle Gain"
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Fitkit Resistance Bands Set",
+    "category": "Fitness",
+    "subcategory": "Resistance Bands",
+    "brand": "Fitkit",
+    "price": 699,
+    "rating": 4.2,
+    "tags": [
+      "Home Workout",
+      "Budget",
+      "Travel"
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Decathlon Resistance Bands",
+    "category": "Fitness",
+    "subcategory": "Resistance Bands",
+    "brand": "Decathlon",
+    "price": 1200,
+    "rating": 4.4,
+    "tags": [
+      "Fitness",
+      "Durable",
+      "Home Workout"
+    ]
+  },
+  {
+    "id": 47,
+    "name": "Logitech G102 Gaming Mouse",
+    "category": "Gaming",
+    "subcategory": "Gaming Mouse",
+    "brand": "Logitech",
+    "price": 1500,
+    "rating": 4.4,
+    "tags": [
+      "Budget",
+      "Gaming",
+      "Everyday"
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Razer DeathAdder V3",
+    "category": "Gaming",
+    "subcategory": "Gaming Mouse",
+    "brand": "Razer",
+    "price": 6500,
+    "rating": 4.7,
+    "tags": [
+      "Premium",
+      "Gaming",
+      "Esports"
+    ]
+  },
+  {
+    "id": 49,
+    "name": "Redragon Mechanical Keyboard",
+    "category": "Gaming",
+    "subcategory": "Mechanical Keyboard",
+    "brand": "Redragon",
+    "price": 3200,
+    "rating": 4.3,
+    "tags": [
+      "Budget",
+      "Gaming",
+      "RGB"
+    ]
+  },
+  {
+    "id": 50,
+    "name": "Corsair K70 Mechanical Keyboard",
+    "category": "Gaming",
+    "subcategory": "Mechanical Keyboard",
+    "brand": "Corsair",
+    "price": 12000,
+    "rating": 4.6,
+    "tags": [
+      "Premium",
+      "Gaming",
+      "Esports"
+    ]
+  },
+  {
+    "id": 51,
+    "name": "GTRACING Gaming Chair",
+    "category": "Gaming",
+    "subcategory": "Gaming Chair",
+    "brand": "GTRACING",
+    "price": 9500,
+    "rating": 4.2,
+    "tags": [
+      "Budget",
+      "Comfort",
+      "Gaming"
+    ]
+  },
+  {
+    "id": 52,
+    "name": "Secretlab Titan Gaming Chair",
+    "category": "Gaming",
+    "subcategory": "Gaming Chair",
+    "brand": "Secretlab",
+    "price": 35000,
+    "rating": 4.8,
+    "tags": [
+      "Premium",
+      "Comfort",
+      "Ergonomic"
+    ]
+  },
+  {
+    "id": 53,
+    "name": "Mi Power Bank 3i",
+    "category": "Accessories",
+    "subcategory": "Power Bank",
+    "brand": "Xiaomi",
+    "price": 1400,
+    "rating": 4.3,
+    "tags": [
+      "Budget",
+      "Travel",
+      "Everyday"
+    ]
+  },
+  {
+    "id": 54,
+    "name": "Anker PowerCore 20000",
+    "category": "Accessories",
+    "subcategory": "Power Bank",
+    "brand": "Anker",
+    "price": 3200,
+    "rating": 4.6,
+    "tags": [
+      "Premium",
+      "Travel",
+      "Fast Charging"
+    ]
+  },
+  {
+    "id": 55,
+    "name": "UGREEN USB Hub",
+    "category": "Accessories",
+    "subcategory": "USB Hub",
+    "brand": "UGREEN",
+    "price": 1800,
+    "rating": 4.4,
+    "tags": [
+      "Office",
+      "Productivity",
+      "Everyday"
+    ]
+  },
+  {
+    "id": 56,
+    "name": "Samsung 1TB SSD",
+    "category": "Accessories",
+    "subcategory": "SSD",
+    "brand": "Samsung",
+    "price": 6500,
+    "rating": 4.7,
+    "tags": [
+      "Storage",
+      "Coding",
+      "Premium"
+    ]
+  },
+  {
+    "id": 57,
+    "name": "WD 512GB SSD",
+    "category": "Accessories",
+    "subcategory": "SSD",
+    "brand": "Western Digital",
+    "price": 3800,
+    "rating": 4.4,
+    "tags": [
+      "Storage",
+      "Budget",
+      "Everyday"
+    ]
+  },
+  {
+    "id": 58,
+    "name": "SanDisk 64GB Pendrive",
+    "category": "Accessories",
+    "subcategory": "Pendrive",
+    "brand": "SanDisk",
+    "price": 550,
+    "rating": 4.2,
+    "tags": [
+      "Budget",
+      "Storage",
+      "Everyday"
+    ]
+  },
+  {
+    "id": 59,
+    "name": "Logitech M235 Wireless Mouse",
+    "category": "Accessories",
+    "subcategory": "Wireless Mouse",
+    "brand": "Logitech",
+    "price": 900,
+    "rating": 4.3,
+    "tags": [
+      "Budget",
+      "Office",
+      "Everyday"
+    ]
+  },
+  {
+    "id": 60,
+    "name": "HP Wireless Mouse",
+    "category": "Accessories",
+    "subcategory": "Wireless Mouse",
+    "brand": "HP",
+    "price": 700,
+    "rating": 4.1,
+    "tags": [
+      "Budget",
+      "Office",
+      "Everyday"
+    ]
+  },
+  {
+    "id": 61,
+    "name": "Sony WH-CH720N Wireless ANC",
+    "category": "Electronics",
+    "subcategory": "Headphones",
+    "brand": "Sony",
+    "price": 9990,
+    "rating": 4.4,
+    "tags": [
+      "Wireless",
+      "Noise Cancelling",
+      "Music",
+      "Bluetooth",
+      "Long Battery"
+    ]
+  },
+  {
+    "id": 62,
+    "name": "JBL Tune 770NC",
+    "category": "Electronics",
+    "subcategory": "Headphones",
+    "brand": "JBL",
+    "price": 6499,
+    "rating": 4.3,
+    "tags": [
+      "Wireless",
+      "Noise Cancelling",
+      "Bass",
+      "Bluetooth",
+      "Long Battery"
+    ]
+  },
+  {
+    "id": 63,
+    "name": "boAt Nirvanaa 751 ANC",
+    "category": "Electronics",
+    "subcategory": "Headphones",
+    "brand": "boAt",
+    "price": 3999,
+    "rating": 4.1,
+    "tags": [
+      "Wireless",
+      "Noise Cancelling",
+      "Bass",
+      "Budget",
+      "Bluetooth"
+    ]
+  },
+  {
+    "id": 64,
+    "name": "Sennheiser HD 450SE Bluetooth NC",
+    "category": "Electronics",
+    "subcategory": "Headphones",
+    "brand": "Sennheiser",
+    "price": 14990,
+    "rating": 4.5,
+    "tags": [
+      "Wireless",
+      "Noise Cancelling",
+      "Music",
+      "Premium",
+      "Bluetooth"
+    ]
+  },
+  {
+    "id": 65,
+    "name": "Anker Soundcore Q20i Hybrid ANC",
+    "category": "Electronics",
+    "subcategory": "Headphones",
+    "brand": "Anker Soundcore",
+    "price": 4999,
+    "rating": 4.2,
+    "tags": [
+      "Wireless",
+      "Noise Cancelling",
+      "Budget",
+      "Bluetooth",
+      "Long Battery"
+    ]
+  },
+  {
+    "id": 66,
+    "name": "OnePlus Buds Pro 2 ANC",
+    "category": "Electronics",
+    "subcategory": "Headphones",
+    "brand": "OnePlus",
+    "price": 11999,
+    "rating": 4.6,
+    "tags": [
+      "Wireless",
+      "Noise Cancelling",
+      "Travel",
+      "Bluetooth",
+      "Fast Charging"
+    ]
+  },
+  {
+    "id": 67,
+    "name": "Realme Buds Air 5 Pro",
+    "category": "Electronics",
+    "subcategory": "Headphones",
+    "brand": "Realme",
+    "price": 4999,
+    "rating": 4.4,
+    "tags": [
+      "Wireless",
+      "Noise Cancelling",
+      "Bass",
+      "Budget",
+      "Fast Charging"
+    ]
+  },
+  {
+    "id": 68,
+    "name": "Noise Three Wireless Headphones",
+    "category": "Electronics",
+    "subcategory": "Headphones",
+    "brand": "Noise",
+    "price": 1999,
+    "rating": 4.0,
+    "tags": [
+      "Wireless",
+      "Bluetooth",
+      "Budget",
+      "Music",
+      "Long Battery"
+    ]
+  },
+  {
+    "id": 69,
+    "name": "Skullcandy Crusher ANC 2 Bass",
+    "category": "Electronics",
+    "subcategory": "Headphones",
+    "brand": "Skullcandy",
+    "price": 22999,
+    "rating": 4.7,
+    "tags": [
+      "Wireless",
+      "Noise Cancelling",
+      "Bass",
+      "Gaming",
+      "Premium"
+    ]
+  },
+  {
+    "id": 70,
+    "name": "Bose QuietComfort Ultra Headphones",
+    "category": "Electronics",
+    "subcategory": "Headphones",
+    "brand": "Bose",
+    "price": 35900,
+    "rating": 4.9,
+    "tags": [
+      "Wireless",
+      "Noise Cancelling",
+      "Travel",
+      "Premium",
+      "Office"
+    ]
+  },
+  {
+    "id": 71,
+    "name": "Dell G15 Ryzen Gaming Laptop",
+    "category": "Electronics",
+    "subcategory": "Laptop",
+    "brand": "Dell",
+    "price": 78000,
+    "rating": 4.5,
+    "tags": [
+      "Gaming",
+      "Coding",
+      "Students",
+      "Premium"
+    ]
+  },
+  {
+    "id": 72,
+    "name": "HP Pavilion 14 Slim",
+    "category": "Electronics",
+    "subcategory": "Laptop",
+    "brand": "HP",
+    "price": 62000,
+    "rating": 4.3,
+    "tags": [
+      "Office",
+      "Students",
+      "Lightweight",
+      "Battery"
+    ]
+  },
+  {
+    "id": 73,
+    "name": "Lenovo IdeaPad Slim 3",
+    "category": "Electronics",
+    "subcategory": "Laptop",
+    "brand": "Lenovo",
+    "price": 38900,
+    "rating": 4.0,
+    "tags": [
+      "Budget",
+      "Students",
+      "Office",
+      "Lightweight"
+    ]
+  },
+  {
+    "id": 74,
+    "name": "Asus ROG Strix G16 Gaming",
+    "category": "Electronics",
+    "subcategory": "Laptop",
+    "brand": "Asus",
+    "price": 124000,
+    "rating": 4.8,
+    "tags": [
+      "Gaming",
+      "Premium",
+      "Editing",
+      "Coding"
+    ]
+  },
+  {
+    "id": 75,
+    "name": "Acer Aspire 7 Core i5",
+    "category": "Electronics",
+    "subcategory": "Laptop",
+    "brand": "Acer",
+    "price": 54900,
+    "rating": 4.2,
+    "tags": [
+      "Budget",
+      "Coding",
+      "Students"
+    ]
+  },
+  {
+    "id": 76,
+    "name": "Apple MacBook Pro M3 Max",
+    "category": "Electronics",
+    "subcategory": "Laptop",
+    "brand": "Apple",
+    "price": 169900,
+    "rating": 4.9,
+    "tags": [
+      "Premium",
+      "Coding",
+      "Editing",
+      "Battery"
+    ]
+  },
+  {
+    "id": 77,
+    "name": "MSI Modern 14 Ultra thin",
+    "category": "Electronics",
+    "subcategory": "Laptop",
+    "brand": "MSI",
+    "price": 42000,
+    "rating": 4.1,
+    "tags": [
+      "Lightweight",
+      "Students",
+      "Budget",
+      "Office"
+    ]
+  },
+  {
+    "id": 78,
+    "name": "Samsung Galaxy Book4 Pro",
+    "category": "Electronics",
+    "subcategory": "Laptop",
+    "brand": "Samsung",
+    "price": 84900,
+    "rating": 4.5,
+    "tags": [
+      "Business",
+      "Lightweight",
+      "Premium",
+      "Battery"
+    ]
+  },
+  {
+    "id": 79,
+    "name": "HP Omen 16 RTX Gaming",
+    "category": "Electronics",
+    "subcategory": "Laptop",
+    "brand": "HP",
+    "price": 115000,
+    "rating": 4.7,
+    "tags": [
+      "Gaming",
+      "Coding",
+      "Editing",
+      "Premium"
+    ]
+  },
+  {
+    "id": 80,
+    "name": "Lenovo ThinkPad E14 Gen 5",
+    "category": "Electronics",
+    "subcategory": "Laptop",
+    "brand": "Lenovo",
+    "price": 68000,
+    "rating": 4.4,
+    "tags": [
+      "Business",
+      "Office",
+      "Battery",
+      "Premium"
+    ]
+  },
+  {
+    "id": 81,
+    "name": "iPhone 15 Pro",
+    "category": "Electronics",
+    "subcategory": "Smartphone",
+    "brand": "Apple",
+    "price": 129000,
+    "rating": 4.9,
+    "tags": [
+      "Premium",
+      "Photography",
+      "Content Creation",
+      "5G"
+    ]
+  },
+  {
+    "id": 82,
+    "name": "Samsung Galaxy A55 5G",
+    "category": "Electronics",
+    "subcategory": "Smartphone",
+    "brand": "Samsung",
+    "price": 39999,
+    "rating": 4.4,
+    "tags": [
+      "Everyday",
+      "Battery",
+      "5G",
+      "Travel"
+    ]
+  },
+  {
+    "id": 83,
+    "name": "OnePlus 12R",
+    "category": "Electronics",
+    "subcategory": "Smartphone",
+    "brand": "OnePlus",
+    "price": 39999,
+    "rating": 4.6,
+    "tags": [
+      "Gaming",
+      "Fast Charging",
+      "Battery",
+      "5G"
+    ]
+  },
+  {
+    "id": 84,
+    "name": "Nothing Phone (2) Glyph",
+    "category": "Electronics",
+    "subcategory": "Smartphone",
+    "brand": "Nothing",
+    "price": 44999,
+    "rating": 4.5,
+    "tags": [
+      "Premium",
+      "Everyday",
+      "5G"
+    ]
+  },
+  {
+    "id": 85,
+    "name": "Google Pixel 8a AI",
+    "category": "Electronics",
+    "subcategory": "Smartphone",
+    "brand": "Google",
+    "price": 52999,
+    "rating": 4.6,
+    "tags": [
+      "Photography",
+      "Travel",
+      "Everyday",
+      "5G"
+    ]
+  },
+  {
+    "id": 86,
+    "name": "Xiaomi Redmi Note 13 Pro 5G",
+    "category": "Electronics",
+    "subcategory": "Smartphone",
+    "brand": "Xiaomi",
+    "price": 25999,
+    "rating": 4.3,
+    "tags": [
+      "Budget",
+      "Battery",
+      "Everyday",
+      "5G"
+    ]
+  },
+  {
+    "id": 87,
+    "name": "Motorola Edge 50 Pro",
+    "category": "Electronics",
+    "subcategory": "Smartphone",
+    "brand": "Motorola",
+    "price": 31999,
+    "rating": 4.4,
+    "tags": [
+      "Fast Charging",
+      "Everyday",
+      "Photography",
+      "5G"
+    ]
+  },
+  {
+    "id": 88,
+    "name": "Realme GT 6T",
+    "category": "Electronics",
+    "subcategory": "Smartphone",
+    "brand": "Realme",
+    "price": 30999,
+    "rating": 4.5,
+    "tags": [
+      "Gaming",
+      "Fast Charging",
+      "Battery"
+    ]
+  },
+  {
+    "id": 89,
+    "name": "iPhone 13",
+    "category": "Electronics",
+    "subcategory": "Smartphone",
+    "brand": "Apple",
+    "price": 48999,
+    "rating": 4.7,
+    "tags": [
+      "Everyday",
+      "Premium",
+      "Battery",
+      "5G"
+    ]
+  },
+  {
+    "id": 90,
+    "name": "Samsung Galaxy M15 Budget",
+    "category": "Electronics",
+    "subcategory": "Smartphone",
+    "brand": "Samsung",
+    "price": 14999,
+    "rating": 4.1,
+    "tags": [
+      "Budget",
+      "Battery",
+      "Everyday"
+    ]
+  },
+  {
+    "id": 91,
+    "name": "Nike Pegasus 40 Running Shoes",
+    "category": "Fashion",
+    "subcategory": "Running Shoes",
+    "brand": "Nike",
+    "price": 11499,
+    "rating": 4.7,
+    "tags": [
+      "Sports",
+      "Comfort",
+      "Premium"
+    ]
+  },
+  {
+    "id": 92,
+    "name": "Adidas Ultraboost Light Running",
+    "category": "Fashion",
+    "subcategory": "Running Shoes",
+    "brand": "Adidas",
+    "price": 17999,
+    "rating": 4.8,
+    "tags": [
+      "Sports",
+      "Comfort",
+      "Premium"
+    ]
+  },
+  {
+    "id": 93,
+    "name": "Puma Velocity Nitro 2 Shoes",
+    "category": "Fashion",
+    "subcategory": "Running Shoes",
+    "brand": "Puma",
+    "price": 7999,
+    "rating": 4.5,
+    "tags": [
+      "Sports",
+      "Comfort",
+      "Budget"
+    ]
+  },
+  {
+    "id": 94,
+    "name": "Nike Court Vision Sneakers",
+    "category": "Fashion",
+    "subcategory": "Sneakers",
+    "brand": "Nike",
+    "price": 5999,
+    "rating": 4.4,
+    "tags": [
+      "Casual",
+      "Fashion",
+      "Students"
+    ]
+  },
+  {
+    "id": 95,
+    "name": "Puma Suede Classic Sneakers",
+    "category": "Fashion",
+    "subcategory": "Sneakers",
+    "brand": "Puma",
+    "price": 6999,
+    "rating": 4.3,
+    "tags": [
+      "Casual",
+      "Fashion",
+      "Budget"
+    ]
+  },
+  {
+    "id": 96,
+    "name": "Levi Denim Trucker Jacket",
+    "category": "Fashion",
+    "subcategory": "Jacket",
+    "brand": "Levi's",
+    "price": 3499,
+    "rating": 4.4,
+    "tags": [
+      "Casual",
+      "Fashion",
+      "Winter"
+    ]
+  },
+  {
+    "id": 97,
+    "name": "Woodland Leather Bomber Jacket",
+    "category": "Fashion",
+    "subcategory": "Jacket",
+    "brand": "Woodland",
+    "price": 8999,
+    "rating": 4.6,
+    "tags": [
+      "Winter",
+      "Durable",
+      "Premium"
+    ]
+  },
+  {
+    "id": 98,
+    "name": "Titan Regalia Watch",
+    "category": "Fashion",
+    "subcategory": "Watch",
+    "brand": "Titan",
+    "price": 8500,
+    "rating": 4.5,
+    "tags": [
+      "Office",
+      "Casual",
+      "Fashion"
+    ]
+  },
+  {
+    "id": 99,
+    "name": "Fossil Machine Chronograph",
+    "category": "Fashion",
+    "subcategory": "Watch",
+    "brand": "Fossil",
+    "price": 12499,
+    "rating": 4.6,
+    "tags": [
+      "Premium",
+      "Casual",
+      "Fashion"
+    ]
+  },
+  {
+    "id": 100,
+    "name": "Wildcraft WorkPack 30L",
+    "category": "Fashion",
+    "subcategory": "Backpack",
+    "brand": "Wildcraft",
+    "price": 2499,
+    "rating": 4.3,
+    "tags": [
+      "Office",
+      "Students",
+      "Travel"
+    ]
+  },
+  {
+    "id": 101,
+    "name": "American Tourister Urban Backpack",
+    "category": "Fashion",
+    "subcategory": "Backpack",
+    "brand": "American Tourister",
+    "price": 1899,
+    "rating": 4.2,
+    "tags": [
+      "Budget",
+      "Students",
+      "Travel"
+    ]
+  },
+  {
+    "id": 102,
+    "name": "Wildcraft Hiking Winter Jacket",
+    "category": "Fashion",
+    "subcategory": "Jacket",
+    "brand": "Wildcraft",
+    "price": 4200,
+    "rating": 4.4,
+    "tags": [
+      "Travel",
+      "Sports",
+      "Winter"
+    ]
+  }
+]

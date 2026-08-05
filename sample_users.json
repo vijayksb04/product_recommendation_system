@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Rahul",
+    "description": "College Student",
+    "preferences": {
+      "category": "Electronics",
+      "subcategory": "Laptop",
+      "budget": 70000,
+      "preferred_brand": "Dell",
+      "preferred_tags": ["Coding", "Students"]
+    }
+  },
+  {
+    "name": "Priya",
+    "description": "Fitness Enthusiast",
+    "preferences": {
+      "category": "Fitness",
+      "subcategory": "Protein Powder",
+      "budget": 3000,
+      "preferred_brand": "MuscleBlaze",
+      "preferred_tags": ["Fitness", "Muscle Gain"]
+    }
+  },
+  {
+    "name": "Neha",
+    "description": "Book Reader",
+    "preferences": {
+      "category": "Books",
+      "subcategory": "Programming",
+      "budget": 800,
+      "preferred_brand": null,
+      "preferred_tags": ["Programming", "Software Engineering"]
+    }
+  },
+  {
+    "name": "Arjun",
+    "description": "Home Cook",
+    "preferences": {
+      "category": "Home & Kitchen",
+      "subcategory": "Air Fryer",
+      "budget": 8000,
+      "preferred_brand": "Philips",
+      "preferred_tags": ["Healthy Cooking"]
+    }
+  }
+]
