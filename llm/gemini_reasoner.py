@@ -162,7 +162,7 @@ Mention:
 Do not hallucinate."""
 
             response = self.client.models.generate_content(
-                model='gemini-2.0-flash',
+                model='gemini-3.1-flash-lite',
                 contents=prompt,
                 config=types.GenerateContentConfig(
                     system_instruction=system_instruction,
@@ -276,7 +276,7 @@ Constraint Rules:
 - Return ONLY valid JSON matching the schema."""
 
             response = self.client.models.generate_content(
-                model='gemini-2.0-flash',
+                model='gemini-3.1-flash-lite',
                 contents=prompt,
                 config=types.GenerateContentConfig(
                     response_mime_type="application/json",
