@@ -173,8 +173,11 @@ Do not hallucinate."""
             else:
                 return "AI explanation is currently unavailable."
 
-        except Exception:
-            # Robust exception handling: never raise exceptions to Streamlit UI
+        except Exception as e:
+            # Robust exception handling: print to console for debugging, but never crash Streamlit UI
+            import traceback
+            print(f"[GeminiReasoner Error in generate_explanation]: {e}")
+            traceback.print_exc()
             return "AI explanation is currently unavailable."
 
     def generate_batch_explanations(
@@ -285,7 +288,10 @@ Constraint Rules:
                 return extracted
             return fallback
 
-        except Exception:
+        except Exception as e:
+            import traceback
+            print(f"[GeminiReasoner Error in extract_preferences]: {e}")
+            traceback.print_exc()
             return fallback
 
 if __name__ == "__main__":
