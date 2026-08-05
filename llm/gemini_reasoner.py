@@ -51,6 +51,15 @@ if not GROQ_API_KEY:
     if groq_key and not groq_key.startswith("YOUR_"):
         GROQ_API_KEY = groq_key
 
+# Safeguard: if a Groq key (starts with 'gsk_') was pasted into Google/Gemini keys
+if GOOGLE_API_KEY and GOOGLE_API_KEY.startswith("gsk_"):
+    GROQ_API_KEY = GOOGLE_API_KEY
+    GOOGLE_API_KEY = None
+
+if GEMINI_API_KEY and GEMINI_API_KEY.startswith("gsk_"):
+    GROQ_API_KEY = GEMINI_API_KEY
+    GEMINI_API_KEY = None
+
 # Also call load_dotenv to make sure other environment settings are available
 load_dotenv()
 
