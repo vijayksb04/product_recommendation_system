@@ -34,5 +34,16 @@ DEMO_CACHE = {
             "Comfort",
             "Sports"
         ]
+    },
+    "I'm looking for a smartwatch under ₹15,000 with an AMOLED display, long battery life, and fitness tracking.": {
+        "category": "Electronics",
+        "subcategory": "Smartwatch",
+        "budget": 15000,
+        "preferred_brand": None,
+        "preferred_tags": [
+            "Battery",
+            "Fitness",
+            "Premium"
+        ]
     }
 }

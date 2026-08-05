@@ -173,8 +173,8 @@ if "nlp_prompt" not in st.session_state:
     st.session_state.nlp_prompt = ""
 
 # Show API status warn
-if reasoner is None or (reasoner.client is None and reasoner.groq_client is None):
-    st.warning("⚠️ Gemini/Groq API is not configured. Please add GOOGLE_API_KEY or GROQ_API_KEY to your `.env` file in the root directory to enable AI preferences extraction and explanations.")
+if reasoner is None or reasoner.client is None:
+    st.warning("⚠️ Gemini API is not configured. Please add GOOGLE_API_KEY to your `.env` file in the root directory to enable AI preferences extraction and explanations.")
 
 # ======================================================
 # FEATURE 1 — Natural Language Shopping Assistant
@@ -190,7 +190,7 @@ nlp_input = st.text_area(
 
 if st.button("✨ AI Understand My Needs"):
     if nlp_input.strip():
-        if reasoner is not None and (reasoner.client is not None or reasoner.groq_client is not None):
+        if reasoner is not None and reasoner.client is not None:
             with st.spinner("🤖 Extracting preferences..."):
                 extracted = reasoner.extract_preferences(nlp_input)
                 
@@ -362,7 +362,7 @@ else:
 
         # AI Suitability Explanation Button
         if st.button("✨ Generate AI Suitability Explanation", key=f"ai_btn_{prod['id']}"):
-            if reasoner is not None and (reasoner.client is not None or reasoner.groq_client is not None):
+            if reasoner is not None and reasoner.client is not None:
                 with st.spinner("🤖 Consulting Gemini for suitability reasoning..."):
                     try:
                         explanation = reasoner.generate_explanation(user_prefs, rec)
@@ -375,4 +375,4 @@ else:
                     except Exception as ex:
                         st.error(f"Error calling Gemini Reasoner: {ex}")
             else:
-                st.info("ℹ️ AI explanation is currently unavailable. Please check GOOGLE_API_KEY or GROQ_API_KEY environment variable.")
+                st.info("ℹ️ AI explanation is currently unavailable. Please check GOOGLE_API_KEY environment variable.")

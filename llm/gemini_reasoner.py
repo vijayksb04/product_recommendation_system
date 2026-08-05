@@ -14,7 +14,6 @@ workspace_root = os.path.abspath(os.path.join(project_root, ".."))
 # Resolve keys by inspecting all possible .env files and ignoring placeholders starting with 'YOUR_'
 GOOGLE_API_KEY = None
 GEMINI_API_KEY = None
-GROQ_API_KEY = None
 
 env_paths = [
     os.path.join(project_root, ".env"),
@@ -27,14 +26,11 @@ for path in env_paths:
         config = dotenv_values(path)
         g_key = config.get("GOOGLE_API_KEY")
         gem_key = config.get("GEMINI_API_KEY")
-        groq_key = config.get("GROQ_API_KEY")
         
         if g_key and not g_key.startswith("YOUR_"):
             GOOGLE_API_KEY = g_key
         if gem_key and not gem_key.startswith("YOUR_"):
             GEMINI_API_KEY = gem_key
-        if groq_key and not groq_key.startswith("YOUR_"):
-            GROQ_API_KEY = groq_key
 
 # Fallback to system environment if still not found
 if not GOOGLE_API_KEY:
@@ -47,47 +43,20 @@ if not GEMINI_API_KEY:
     if gem_key and not gem_key.startswith("YOUR_"):
         GEMINI_API_KEY = gem_key
 
-if not GROQ_API_KEY:
-    groq_key = os.environ.get("GROQ_API_KEY")
-    if groq_key and not groq_key.startswith("YOUR_"):
-        GROQ_API_KEY = groq_key
-
-# Safeguard: if a Groq key (starts with 'gsk_') was pasted into Google/Gemini keys
-if GOOGLE_API_KEY and GOOGLE_API_KEY.startswith("gsk_"):
-    GROQ_API_KEY = GOOGLE_API_KEY
-    GOOGLE_API_KEY = None
-
-if GEMINI_API_KEY and GEMINI_API_KEY.startswith("gsk_"):
-    GROQ_API_KEY = GEMINI_API_KEY
-    GEMINI_API_KEY = None
-
 # Also call load_dotenv to make sure other environment settings are available
 load_dotenv()
 
 class GeminiReasoner:
     """
     A reasoner class responsible for generating human-readable, tailored 
-    suitability explanations for product recommendations using the Google GenAI SDK or Groq.
+    suitability explanations for product recommendations using the Google GenAI SDK.
     """
     def __init__(self):
-        # Read API keys
+        # Read API key prioritizing GOOGLE_API_KEY, falling back to GEMINI_API_KEY
         self.api_key = GOOGLE_API_KEY or GEMINI_API_KEY
-        self.groq_api_key = GROQ_API_KEY
-
-        # Initialize Groq if key is available
-        self.groq_client = None
-        if self.groq_api_key:
-            try:
-                from groq import Groq
-                self.groq_client = Groq(api_key=self.groq_api_key)
-                print("Groq Client initialized successfully!")
-            except Exception as e:
-                print(f"Failed to initialize Groq client: {e}")
-                self.groq_client = None
 
         # Initialize the GenAI Client with 10 seconds timeout and maximum 2 retries (total 3 attempts)
-        self.client = None
-        if self.api_key and not self.groq_client:
+        if self.api_key:
             try:
                 self.client = genai.Client(
                     api_key=self.api_key,
@@ -99,6 +68,8 @@ class GeminiReasoner:
                 print("Gemini Client initialized successfully!")
             except Exception:
                 self.client = None
+        else:
+            self.client = None
 
     def generate_explanation(
         self,
@@ -118,7 +89,7 @@ class GeminiReasoner:
         Returns:
             A string containing the explanation, or a fallback message if generation fails.
         """
-        if not self.client and not self.groq_client:
+        if not self.client:
             return "AI explanation is currently unavailable."
 
         try:
@@ -163,6 +134,19 @@ class GeminiReasoner:
   * Category/Subcategory Match: {b_catsub * 100:.1f}%
 """
 
+            prompt = f"""
+User Preferences:
+{user_details}
+
+Recommended Product Details:
+{product_details}
+
+Recommendation Scores:
+{score_details}
+
+Please explain why this product matches the user's preferences.
+"""
+
             # Configure system instructions as requested
             system_instruction = """You are a shopping assistant.
 DO NOT recommend different products.
@@ -177,36 +161,8 @@ Mention:
 • Rating
 Do not hallucinate."""
 
-            if self.groq_client:
-                prompt_content = f"{system_instruction}\n\nUser Preferences:\n{user_details}\n\nRecommended Product Details:\n{product_details}\n\nRecommendation Scores:\n{score_details}\n\nPlease explain why this product matches the user's preferences."
-                chat_completion = self.groq_client.chat.completions.create(
-                    messages=[
-                        {"role": "user", "content": prompt_content}
-                    ],
-                    model="llama-3.3-70b-versatile",
-                    temperature=0.2
-                )
-                res = chat_completion.choices[0].message.content
-                if res:
-                    return res.strip()
-                else:
-                    return "AI explanation is currently unavailable."
-
-            # Fallback to Gemini
-            prompt = f"""
-User Preferences:
-{user_details}
-
-Recommended Product Details:
-{product_details}
-
-Recommendation Scores:
-{score_details}
-
-Please explain why this product matches the user's preferences.
-"""
             response = self.client.models.generate_content(
-                model='gemini-3.5-flash',
+                model='gemini-2.0-flash',
                 contents=prompt,
                 config=types.GenerateContentConfig(
                     system_instruction=system_instruction,
@@ -260,7 +216,7 @@ Please explain why this product matches the user's preferences.
 
     def extract_preferences(self, prompt: str) -> Dict[str, Any]:
         """
-        Extracts structured shopping preferences from a natural language request using Gemini or Groq.
+        Extracts structured shopping preferences from a natural language request using Gemini.
 
         Args:
             prompt: User's natural language request.
@@ -275,10 +231,6 @@ Please explain why this product matches the user's preferences.
                 "preferred_tags": List[str]
             }
         """
-        # Check demo cache first to bypass LLM rate limits during presentation
-        if prompt and prompt.strip() in DEMO_CACHE:
-            print("Demo Cache Hit! Retrieving pre-configured preferences.")
-            return DEMO_CACHE[prompt.strip()].copy()
         fallback = {
             "category": None,
             "subcategory": None,
@@ -287,10 +239,15 @@ Please explain why this product matches the user's preferences.
             "preferred_tags": []
         }
 
-        if not self.client and not self.groq_client:
+        if not self.client:
             return fallback
 
         try:
+            # Check demo cache first to bypass LLM rate limits during presentation
+            if prompt and prompt.strip() in DEMO_CACHE:
+                print("Demo Cache Hit! Retrieving pre-configured preferences.")
+                return DEMO_CACHE[prompt.strip()].copy()
+
             system_instruction = """You are a structured preference extraction assistant.
 Analyze the user's shopping request and extract their preferences into a JSON object.
 
@@ -318,29 +275,8 @@ Constraint Rules:
 - preferred_tags must be a list of strings.
 - Return ONLY valid JSON matching the schema."""
 
-            if self.groq_client:
-                chat_completion = self.groq_client.chat.completions.create(
-                    messages=[
-                        {"role": "system", "content": system_instruction},
-                        {"role": "user", "content": prompt}
-                    ],
-                    model="llama-3.3-70b-versatile",
-                    temperature=0.1,
-                    response_format={"type": "json_object"}
-                )
-                res = chat_completion.choices[0].message.content
-                if res:
-                    import json
-                    extracted = json.loads(res.strip())
-                    for key in fallback:
-                        if key not in extracted:
-                            extracted[key] = fallback[key]
-                    return extracted
-                return fallback
-
-            # Fallback to Gemini
             response = self.client.models.generate_content(
-                model='gemini-3.5-flash',
+                model='gemini-2.0-flash',
                 contents=prompt,
                 config=types.GenerateContentConfig(
                     response_mime_type="application/json",
