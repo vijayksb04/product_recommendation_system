@@ -1,0 +1,54 @@
+[
+  {
+    "id": "user_101",
+    "name": "Sarah Chen",
+    "age": 28,
+    "occupation": "Software Engineer",
+    "interests": ["programming", "fitness", "coffee", "minimalism"],
+    "demographics": {
+      "location": "San Francisco, CA",
+      "budget_level": "Premium"
+    },
+    "purchase_history": ["prod_004", "prod_006"],
+    "search_history": ["mechanical keyboard", "ergonomic workspace accessories", "noise cancelling headphones"]
+  },
+  {
+    "id": "user_102",
+    "name": "Marcus Johnson",
+    "age": 35,
+    "occupation": "Graphic Designer",
+    "interests": ["music", "travel", "photography", "fashion"],
+    "demographics": {
+      "location": "Brooklyn, NY",
+      "budget_level": "Medium"
+    },
+    "purchase_history": ["prod_001", "prod_005"],
+    "search_history": ["leather messenger bag", "portable charger", "high quality travel gear"]
+  },
+  {
+    "id": "user_103",
+    "name": "Elena Rodriguez",
+    "age": 42,
+    "occupation": "High School Teacher",
+    "interests": ["cooking", "yoga", "reading", "eco-friendly living"],
+    "demographics": {
+      "location": "Austin, TX",
+      "budget_level": "Medium"
+    },
+    "purchase_history": ["prod_007", "prod_010"],
+    "search_history": ["organic food recipes", "sourdough bread baking", "chef's knives"]
+  },
+  {
+    "id": "user_104",
+    "name": "David Kim",
+    "age": 22,
+    "occupation": "University Student",
+    "interests": ["gaming", "sports", "gadgets", "music"],
+    "demographics": {
+      "location": "Chicago, IL",
+      "budget_level": "Budget"
+    },
+    "purchase_history": ["prod_002", "prod_008"],
+    "search_history": ["affordable bluetooth speakers", "gaming mouse", "running shoes"]
+  }
+]
