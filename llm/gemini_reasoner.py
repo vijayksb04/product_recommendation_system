@@ -3,6 +3,7 @@ from typing import List, Dict, Any
 from google import genai
 from google.genai import types
 from dotenv import load_dotenv, dotenv_values
+from llm.preference_cache import DEMO_CACHE
 
 # Load environment variables from the .env file
 # Try loading from local directories as well for execution flexibility
@@ -274,6 +275,10 @@ Please explain why this product matches the user's preferences.
                 "preferred_tags": List[str]
             }
         """
+        # Check demo cache first to bypass LLM rate limits during presentation
+        if prompt and prompt.strip() in DEMO_CACHE:
+            print("Demo Cache Hit! Retrieving pre-configured preferences.")
+            return DEMO_CACHE[prompt.strip()].copy()
         fallback = {
             "category": None,
             "subcategory": None,
